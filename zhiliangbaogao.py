@@ -6,7 +6,7 @@ import json
 # 通知信息（企微群）
 def test_text():
     # Webhook地址
-    url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=" + "333f3b50-4cdc-4998-a916-243da9e2e96f"
+    url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=4f68fcef-c11f-4e8a-a80f-2b7ee236cff1"
     HEADERS = {
         "Content-Type": "application/json ;charset=utf-8"
     }
