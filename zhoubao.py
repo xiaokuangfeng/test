@@ -11,7 +11,7 @@ def test_text():
         "Content-Type": "application/json ;charset=utf-8"
     }
     # 格式为：text
-    message = "质量报告填写通知："
+    message = "周报填写通知："
     String_textMsg = {
         "msgtype": "text",
         "text": {"content": message + "\n\n"
