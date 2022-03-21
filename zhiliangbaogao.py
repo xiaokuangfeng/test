@@ -11,13 +11,13 @@ def test_text():
         "Content-Type": "application/json ;charset=utf-8"
     }
     # 格式为：text
-    message = "质量报告填写通知："
+    message = "质量报告填写提醒："
     String_textMsg = {
         "msgtype": "text",
         "text": {"content": message + "\n\n"
-                 "同学们，今天周五咯，记得写质量报告！" + "\n"
-                 "同学们，今天周五咯，记得写质量报告！" + "\n"
-                 "同学们，今天周五咯，记得写质量报告！" + "\n\n"
+                 "同学们，今天周五咯，记得质量报告！" + "\n"
+                 "同学们，今天周五咯，记得质量报告！" + "\n"
+                 "同学们，今天周五咯，记得质量报告！" + "\n\n"
                  "(*＾-＾*)" + "\n"
                  }
     }
