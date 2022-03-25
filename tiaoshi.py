@@ -15,7 +15,7 @@ def test_text():
     String_textMsg = {
         "msgtype": "text",
         "text": {"content": message + "\n\n"
-                 "@所有人  "+"\n"
+                 "@all"+"\n\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n\n"
