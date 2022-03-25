@@ -14,12 +14,14 @@ def test_text():
     message = "质量报告填写提醒："
     String_textMsg = {
         "msgtype": "text",
-        "text": {"content": message + "\n\n"
+        "text": {
+            "content": message + "\n\n"
                  "同学们，今天周五咯，记得质量报告！" + "\n"
                  "同学们，今天周五咯，记得质量报告！" + "\n"
                  "同学们，今天周五咯，记得质量报告！" + "\n\n"
-                 "(*＾-＾*)" + "\n"
-                 }
+                 "(*＾-＾*)" + "\n\n"
+            "mentioned_list":["@all"]
+                }
     }
     String_textMsg = json.dumps(String_textMsg)
     requests.packages.urllib3.disable_warnings()
