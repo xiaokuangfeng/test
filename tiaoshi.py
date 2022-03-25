@@ -11,15 +11,16 @@ def test_text():
         "Content-Type": "application/json ;charset=utf-8"
     }
     # 格式为：text
-    message = "调试用：周报填写通知："
+    message = "@all 周报填写通知："
     String_textMsg = {
         "msgtype": "text",
-        "text": {"content": message + "\n\n"
-                 "@all"+"\n\n"
+        "text": {
+            "content": message + "\n\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n\n"
-                 "(*＾-＾*)" + "\n"
+                 "(*＾-＾*)" + "\n",
+            "mentioned_list":["@all"]
                  }
     }
     String_textMsg = json.dumps(String_textMsg)
