@@ -19,9 +19,9 @@ def test_text():
                  "同学们，新的一周开始咯，记得周报！" + "\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n"
                  "同学们，新的一周开始咯，记得周报！" + "\n\n"
-                 "(*＾-＾*)" + "\n",
+                 "(*＾-＾*)" + "\n\n",
             "mentioned_list":["@all"]
-                 }
+                }
     }
     String_textMsg = json.dumps(String_textMsg)
     requests.packages.urllib3.disable_warnings()
