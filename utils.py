@@ -102,3 +102,32 @@ def get_json_data():
         print(f"list1的数据格式为：", type(list1))
         return list1
 # print(get_json_data())
+
+
+
+# 验证码识别：
+# 导包install package： baidu-aip
+# 导包install package： chardet
+from aip import AipOcr
+def get_file_content():
+    # 百度智能云秘钥
+    APP_ID = '65415820'
+    API_KEY = 'b15sMy4T8gZJWaBWxrAptrBt'
+    SECRET_KEY = 'kAsVPNTbW9NfI6HWr7COnwWY7tu6kEtq'
+    client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    with open(r"D:\python3\project\yanzhengma_shibie\img\yanzhengma.png", "rb") as fp:
+        image = fp.read()
+    # 调用通用文字识别（高精度版）
+    res_image = client.basicAccurate(image)
+    # 开始处理res_image字典
+    print(f"res_image的数据类型:", type(res_image), f"，值为：", res_image)
+    # 取出字典res_image['words_result']键值
+    print(f"res_image['words_result']的数据类型：", type(res_image['words_result']), f"，值为：", res_image['words_result'])
+    # 取出列表res_image['words_result'][0]值
+    print(f"res_image['words_result'][0]的数据类型:", type(res_image['words_result'][0]), f"，值为：", res_image['words_result'][0])
+    # 取出字典res_image['words_result'][0]['words']键值
+    result_code = res_image['words_result'][0]['words']
+    print(f"res_image['words_result'][0]['words']的数据类型：", type(res_image['words_result'][0]['words']), f",值为：", result_code)
+    # 返回验证码值
+    return result_code
+# print(get_file_content())
